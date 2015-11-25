@@ -4,7 +4,7 @@ package onepiece;
 
 enum NetMsgID {
     UNKNOWN          =   0;   
-    PING             = 100;
+    SAYHI            = 100;
     ERROR            = 101;
     HEART_BEAT       = 102;
     REGISTER         = 103;

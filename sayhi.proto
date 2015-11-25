@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package onepiece;
+
+message SayHiRequest {
+    string msg = 1;
+}
+
+message SayHiResponse {
+    string msg = 1;
+}

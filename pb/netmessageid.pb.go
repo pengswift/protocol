@@ -7,8 +7,11 @@ Package onepiece is a generated protocol buffer package.
 
 It is generated from these files:
 	netmessageid.proto
+	sayhi.proto
 
 It has these top-level messages:
+	SayHiRequest
+	SayHiResponse
 */
 package onepiece
 
@@ -25,7 +28,7 @@ type NetMsgID int32
 
 const (
 	NetMsgID_UNKNOWN          NetMsgID = 0
-	NetMsgID_PING             NetMsgID = 100
+	NetMsgID_SAYHI            NetMsgID = 100
 	NetMsgID_ERROR            NetMsgID = 101
 	NetMsgID_HEART_BEAT       NetMsgID = 102
 	NetMsgID_REGISTER         NetMsgID = 103
@@ -41,7 +44,7 @@ const (
 
 var NetMsgID_name = map[int32]string{
 	0:   "UNKNOWN",
-	100: "PING",
+	100: "SAYHI",
 	101: "ERROR",
 	102: "HEART_BEAT",
 	103: "REGISTER",
@@ -56,7 +59,7 @@ var NetMsgID_name = map[int32]string{
 }
 var NetMsgID_value = map[string]int32{
 	"UNKNOWN":          0,
-	"PING":             100,
+	"SAYHI":            100,
 	"ERROR":            101,
 	"HEART_BEAT":       102,
 	"REGISTER":         103,
